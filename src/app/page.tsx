@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
+import AppTable from "@/components/app.table";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
           <Link href="/youtube">youtube</Link>
         </li>
       </ul>
+      <AppTable />
     </div>
   );
 }
