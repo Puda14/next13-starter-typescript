@@ -9,3 +9,5 @@
 - [Fetch Data](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
 - [SWR](https://swr.vercel.app)
 - [Automatic Revalidation](https://swr.vercel.app/docs/revalidation)
+- [Modals](https://react-bootstrap.netlify.app/docs/components/modal/#static-backdrop)
+- [Form](https://react-bootstrap.netlify.app/docs/forms/form-control/)

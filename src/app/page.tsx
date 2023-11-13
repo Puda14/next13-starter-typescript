@@ -25,7 +25,6 @@ export default function Home() {
   }
   return (
     <div>
-      <div>{data?.length}</div>
       {/* <ul>
         <li>
           <Link href="/facebook">facebook</Link>
