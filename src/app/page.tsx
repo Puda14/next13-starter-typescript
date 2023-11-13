@@ -20,16 +20,9 @@ export default function Home() {
     }
   );
 
-  console.log(data);
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     const res = await fetch("http://localhost:8000/blogs");
-  //     const data = await res.json();
-  //     console.log(data);
-  //   };
-  //   fetchData();
-  // }, []);
-
+  if (!data) {
+    return <div>Loading...</div>;
+  }
   return (
     <div>
       <div>{data?.length}</div>
@@ -44,7 +37,7 @@ export default function Home() {
           <Link href="/youtube">youtube</Link>
         </li>
       </ul> */}
-      <AppTable />
+      <AppTable blogs={data} />
     </div>
   );
 }
