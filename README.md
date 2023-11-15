@@ -11,3 +11,4 @@
 - [Automatic Revalidation](https://swr.vercel.app/docs/revalidation)
 - [Modals](https://react-bootstrap.netlify.app/docs/components/modal/#static-backdrop)
 - [Form](https://react-bootstrap.netlify.app/docs/forms/form-control/)
+- [Toastify](https://www.npmjs.com/package/react-toastify): `npm i --save-exact react-toastify@9.1.3`
