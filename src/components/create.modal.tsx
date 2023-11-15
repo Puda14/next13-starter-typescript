@@ -16,8 +16,23 @@ function CreateModal(props: IProps) {
   const [author, setAuthor] = useState<string>("");
   const [content, setContent] = useState<string>("");
   const handleSubmit = () => {
-    console.log(">>>", title, author, content);
-    toast.success("Create succeed !");
+    if (!title || !author || !content) {
+      toast.error("Not empty !");
+      return;
+    }
+    fetch("http://localhost:8000/blogs", {
+      method: "POST",
+      headers: {
+        Accept: "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ title, author, content }),
+    })
+      .then((res) => res.json())
+      .then((res) => {
+        if (res) toast.success("Create new blog succeed !");
+        handleCloseModal();
+      });
   };
   const handleCloseModal = () => {
     setTitle("");

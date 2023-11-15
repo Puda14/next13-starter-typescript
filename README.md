@@ -12,3 +12,4 @@
 - [Modals](https://react-bootstrap.netlify.app/docs/components/modal/#static-backdrop)
 - [Form](https://react-bootstrap.netlify.app/docs/forms/form-control/)
 - [Toastify](https://www.npmjs.com/package/react-toastify): `npm i --save-exact react-toastify@9.1.3`
+- [POST JSON data](https://stackoverflow.com/questions/29775797/fetch-post-json-data/29823632#29823632)
