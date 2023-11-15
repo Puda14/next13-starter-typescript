@@ -36,7 +36,7 @@ export default function Home() {
           <Link href="/youtube">youtube</Link>
         </li>
       </ul> */}
-      <AppTable blogs={data} />
+      <AppTable blogs={data?.sort((a: any, b: any) => b.id - a.id)} />
     </div>
   );
 }
